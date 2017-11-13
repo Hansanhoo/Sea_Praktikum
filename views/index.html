@@ -1,0 +1,34 @@
+
+
+<html data-ng-app="app" lang="de">
+
+<head>
+	<script src="/javascripts/jquery.js"></script>
+	<script src="/javascripts/angular.js"></script>
+	
+	<script src="/javascripts/angular-route.js"></script>
+		<script src="/javascripts/lassApp.js"></script>
+	<script src="/javascripts/lassCtrl.js"></script>
+
+	<script src="/javascripts/lassStorage.js"></script>
+
+</head>
+<body data-ng-controller="myCtrl as vm">		
+		<div class="modal-header heading">
+			<h1 class="modal-title text-center">Learning and Study System</h1>
+		</div>
+		
+	
+		<h3> Login </h3>
+
+		<form>
+		UserName: <input type="text" ng-model="vm.userName"><br>
+		Password: <input type="text" ng-model="vm.Password"><br>
+			<br>
+			Herzlich Willkommen : {{vm.userName}} !!! 
+		</form>
+				 
+			<button ng-click="vm.callMe()">Klick Me!</button>
+		</div>
+	</body>
+</html>
